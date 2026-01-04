@@ -4,9 +4,9 @@ import AboutMe from './components/AboutMe'
 import ContactCTA from './components/ContactCta'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import Projects from './components/projects'
+import Projects from './components/MyProjects'
 import POSProjectDetails from './components/POSProjectDetails'
-import DataVizDetails from './components/DataViz' // The page we created
+import DataVizDetails from './components/DataViz'
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
           </>
         } />
 
-        {/* Dedicated Project Page [Requirement 4] */}
         <Route path="/project/swiftpos" element={<POSProjectDetails />} />
         <Route path="/project/dataviz-dashboard" element={<DataVizDetails />} />
       </Routes>
