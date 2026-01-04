@@ -1,12 +1,33 @@
 import './App.css'
-import Hero from './components/hero'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AboutMe from './components/AboutMe'
+import ContactCTA from './components/ContactCta'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Projects from './components/projects'
+import POSProjectDetails from './components/POSProjectDetails'
+import DataVizDetails from './components/DataViz' // The page we created
 
 function App() {
-
   return (
-    <>
-      <Hero/>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Main Portfolio Page */}
+        <Route path="/" element={
+          <>
+            <Hero profileImage={'/prof.png'} />
+            <AboutMe />
+            <Projects />
+            <ContactCTA />
+          </>
+        } />
+
+        {/* Dedicated Project Page [Requirement 4] */}
+        <Route path="/project/swiftpos" element={<POSProjectDetails />} />
+        <Route path="/project/dataviz-dashboard" element={<DataVizDetails />} />
+      </Routes>
+    </Router>
   )
 }
 
