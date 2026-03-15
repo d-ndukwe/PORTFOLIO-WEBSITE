@@ -10,7 +10,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-slate-50 dark:bg-linear-to-b from-orange-600 to-red-600">
+    <section id="about" className="py-20 px-6 bg-slate-50 dark:bg-linear-to-b from-slate-950 to-slate-800">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           

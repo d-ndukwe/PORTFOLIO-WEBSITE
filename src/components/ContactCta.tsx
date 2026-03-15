@@ -1,6 +1,6 @@
 const ContactCTA = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-linear-to-b from-orange-600 to-purple-600 text-center text-white">
+    <section id="contact" className="py-20 px-6 bg-linear-to-b from-slate-700 to-indigo-600 text-center text-white">
       <h2 className="text-3xl font-bold mb-4">Let's build something together</h2>
       <p className="mb-8 opacity-90 max-w-lg mx-auto">
         I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
