@@ -16,7 +16,7 @@ function App() {
         {/* Main Portfolio Page */}
         <Route path="/" element={
           <>
-            <Hero />
+            <Hero profileImage={'/prof.png'} />
             <AboutMe />
             <Projects />
             <ContactCTA />
